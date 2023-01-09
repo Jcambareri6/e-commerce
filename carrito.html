@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside>
+        <header>
+          <h1 class="logo">E-COMERCE</h1>
+        </header>
+        <nav>
+          <ul>
+            <li>
+              <button class="botonMenu botonVolver">
+                <a href="./index.html">
+                  <i class="fa-regular fa-arrow-left"></i>
+                  seguir comprando
+                </a>
+              </button>
+            </li>
+            <li>
+              <button class="botonMenu botonCarrito active">
+                <a href="./carrito.html">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                  carrito
+                </a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <footer></footer>
+      </aside>
+      <main>
+        <h2 class="tituloPrincipal">CARRITO</h2>
+        <div class="contenedorCarrito "  >
+          <p class="carritoVacio" id="carritoVacio">carrito vacio</p>
+          <div class="carritoProductos disabled " id="contenedorProductos">
+           
+          </div>
+
+          <div class="carritoAcciones " id="carritoAcciones">
+            <div class="carritoAccionesizq">
+              <button class="vaciarCarrito" id="vaciarCarrito">vaciar Carrito</button>
+            </div>
+            <div class="carritoAccionesder">
+              <div class="carritoTotal">
+                <p>total</p>
+                <p id="total">: </p>
+              </div>
+              <button   id="carritoComprar" class="carritoComprar">COMPRAR AHORA</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="./js/carrito.js"></script>
+</html>
